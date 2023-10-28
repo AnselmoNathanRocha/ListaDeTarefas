@@ -5,7 +5,10 @@ let contador = 0;
 
 function addTarefa() {
     let valor = input.value;
-    let valorInput = valor[0].toUpperCase() + (valor.substring(1)).toLowCase;
+    let primLetra = valor[0];
+    let resto = valor.slice(1);
+
+    let valorInput = primLetra.toUpperCase() + resto.toLowerCase();
 
     if ((valorInput !=="") && (valorInput !==null) && (valorInput !==undefined)) {
 
